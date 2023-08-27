@@ -1,0 +1,48 @@
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  /* border-spacing: 0; */
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 0.33rem;
+  border: 1px solid var(--primary-color);
+  text-align: center;
+}
+
+th {
+  color: var(--primary-color);
+}
+
+.col {
+  --col-border-color: var(--primary-color);
+  --col-bg-color: var(--bg-color);
+
+  border: 2px solid var(--col-border-color);
+  background: var(--col-bg-color);
+}
+
+.col--border-success {
+  --col-border-color: var(--success-color);
+}
+.col--border-warning {
+  --col-border-color: var(--warning-color);
+}
+.col--border-danger {
+  --col-border-color: var(--danger-color);
+}
+
+.col--bg-success {
+  --col-bg-color: var(--success-color);
+}
+.col--bg-warning {
+  --col-bg-color: var(--warning-color);
+}
+.col--bg-danger {
+  --col-bg-color: var(--danger-color);
+}
