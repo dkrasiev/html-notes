@@ -1,16 +1,33 @@
-function main() {
-  const selector = "#my-svg";
-  const element = document.querySelector(selector);
+const sectionSelector = "#my-svg-section";
+const section = document.querySelector(sectionSelector);
 
-  if (!element) {
-    console.error(`no ${selector} found`);
-    return;
-  }
+const svgSelector = "svg";
+const svg = section.querySelector(svgSelector);
 
-  const elementWidth = element.clientWidth;
+const buttonSelector = "button";
+const button = section.querySelector(buttonSelector);
 
-  const STEP_SIZE = 4;
-  const COUNT = elementWidth / STEP_SIZE;
+const inputSelector = "input";
+const input = section.querySelector(inputSelector);
+
+if (!section) {
+  throw `no ${sectionSelector} found`;
+}
+if (!svg) {
+  throw `no ${svgSelector} inside ${sectionSelector} found`;
+}
+if (!button) {
+  throw `no ${buttonSelector} inside ${sectionSelector} found`;
+}
+if (!input) {
+  throw `no ${inputSelector} inside ${sectionSelector} found`;
+}
+
+button.addEventListener("click", () => draw());
+
+function draw() {
+  const STEP_SIZE = Number(input.value) || 4;
+  const COUNT = svg.clientWidth / STEP_SIZE;
 
   for (let i = 0; i < COUNT; i++) {
     const circle = document.createElementNS(
@@ -23,7 +40,7 @@ function main() {
     circle.setAttribute("r", STEP_SIZE * (COUNT - i));
     circle.setAttribute("fill", getRandomColor());
 
-    element.append(circle);
+    svg.append(circle);
   }
 }
 
@@ -41,4 +58,4 @@ function getRandomElement(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-main();
+draw();

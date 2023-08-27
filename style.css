@@ -13,13 +13,45 @@ body {
   /* --secondary-color: #b4befe; */
   --text-color: #cdd6f4;
   --bg-color: #1e1e2e;
-  --base-gutter: 1rem;
-  --border-radius: 0.25rem;
+  --base-gutter: 0.5rem;
+  --border-radius: calc(var(--base-gutter) / 2);
   --container-width: 80rem;
+  --animation-duration: 0.2s;
+}
+
+*::selection {
+  color: var(--bg-color);
+  background: var(--primary-color);
 }
 
 a {
   color: var(--link-color);
+}
+
+button,
+input {
+  padding: calc(var(--base-gutter) / 2) var(--base-gutter);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-color);
+}
+
+input {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+button {
+  background: var(--primary-color);
+  color: var(--bg-color);
+  cursor: pointer;
+  transition: transform var(--animation-duration);
+  box-shadow: 0 0.33rem 1rem -0.2rem var(--primary-color);
+}
+
+button:active {
+  color: var(--primary-color);
+  background: var(--bg-color);
+  transform: translateY(0.2rem);
 }
 
 body {
