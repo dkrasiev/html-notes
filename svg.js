@@ -7,25 +7,34 @@ function main() {
     return;
   }
 
-  const svgns = "http://www.w3.org/2000/svg";
-  const count = 64;
-  const stepSize = 2;
-  for (let i = 0; i < count; i++) {
-    const shape = document.createElementNS(svgns, "circle");
+  const elementWidth = element.clientWidth;
 
-    shape.setAttribute("cx", "50%");
-    shape.setAttribute("cy", "50%");
-    shape.setAttribute("r", stepSize * (count - i));
-    shape.setAttribute("fill", getRandomColor());
+  const STEP_SIZE = 4;
+  const COUNT = elementWidth / STEP_SIZE;
 
-    element.append(shape);
+  for (let i = 0; i < COUNT; i++) {
+    const circle = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "circle"
+    );
+
+    circle.setAttribute("cx", "50%");
+    circle.setAttribute("cy", "50%");
+    circle.setAttribute("r", STEP_SIZE * (COUNT - i));
+    circle.setAttribute("fill", getRandomColor());
+
+    element.append(circle);
   }
 }
 
-const COLORS = ["white", "black", "green", "tomato", "blue", "aqua"];
-
 function getRandomColor() {
-  return getRandomElement(COLORS);
+  return (
+    "#" +
+    new Array(6)
+      .fill()
+      .map(() => getRandomElement("0123456789abcdef"))
+      .join("")
+  );
 }
 
 function getRandomElement(arr) {
