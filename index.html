@@ -1,379 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/table.css" />
-    <title>HTML</title>
-  </head>
 
-  <body>
-    <main class="list-container">
-      <h1>My notes about html & css</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/table.css" />
+  <title>HTML</title>
+</head>
 
-      <section class="list-container">
-        <h2>Tables</h2>
+<body>
+  <main class="list-container">
+    <h1>My notes about html & css</h1>
 
-        <h3>Simple</h3>
+    <section class="list-container">
+      <h2>Tables</h2>
 
-        <div class="rounded rounded--space rounded--small">
-          <table>
-            <colgroup>
-              <col class="col col--bg-success" />
-              <col class="col col--bg-warning" span="2" />
-              <col class="col col--bg-danger" />
-            </colgroup>
+      <h3>Simple</h3>
 
-            <tbody style="color: var(--bg-color)">
-              <tr>
-                <td>Hi, I'm your first cell.</td>
-                <td>I'm your second cell.</td>
-                <td>I'm your third cell.</td>
-                <td>I'm your fourth cell.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="rounded rounded--space rounded--small">
+        <table>
+          <colgroup>
+            <col class="col col--bg-success" />
+            <col class="col col--bg-warning" span="2" />
+            <col class="col col--bg-danger" />
+          </colgroup>
 
-        <h3>Regular</h3>
-
-        <div class="rounded">
-          <table>
-            <thead>
-              <tr>
-                <th>col header 1</th>
-                <th>col header 2</th>
-                <th>col header 3</th>
-                <th>col header 4</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">row header 1</th>
-                <td>Quod saepe iusto magni reprehenderit?</td>
-                <td>Eos corrupti laboriosam unde deleniti.</td>
-                <td>Praesentium vero consequuntur nobis earum?</td>
-              </tr>
-              <tr>
-                <th scope="row">row header 2</th>
-                <td>Libero rerum tempore vero commodi.</td>
-                <td>Quam nisi odit fugiat placeat.</td>
-                <td>Veritatis eveniet voluptates nobis delectus!</td>
-              </tr>
-              <tr>
-                <th scope="row">row header 3</th>
-                <td>Commodi dolore quod quae rerum!</td>
-                <td>Asperiores et mollitia porro. Atque.</td>
-                <td>Nesciunt blanditiis facere fugit qui!</td>
-              </tr>
-              <tr>
-                <th scope="row">row header 4</th>
-                <td>Nesciunt explicabo sequi velit maiores!</td>
-                <td>Aperiam sapiente libero cupiditate veniam.</td>
-                <td>Velit pariatur atque est incidunt!</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>Advanced</h3>
-
-        <div class="rounded rounded--warning">
-          <table>
+          <tbody style="color: var(--bg-color)">
             <tr>
-              <th colspan="2">Animals</th>
+              <td>Hi, I'm your first cell.</td>
+              <td>I'm your second cell.</td>
+              <td>I'm your third cell.</td>
+              <td>I'm your fourth cell.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Regular</h3>
+
+      <div class="rounded">
+        <table>
+          <thead>
+            <tr>
+              <th>col header 1</th>
+              <th>col header 2</th>
+              <th>col header 3</th>
+              <th>col header 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">row header 1</th>
+              <td>Quod saepe iusto magni reprehenderit?</td>
+              <td>Eos corrupti laboriosam unde deleniti.</td>
+              <td>Praesentium vero consequuntur nobis earum?</td>
             </tr>
             <tr>
-              <th colspan="2">Hippopotamus</th>
+              <th scope="row">row header 2</th>
+              <td>Libero rerum tempore vero commodi.</td>
+              <td>Quam nisi odit fugiat placeat.</td>
+              <td>Veritatis eveniet voluptates nobis delectus!</td>
             </tr>
             <tr>
-              <th rowspan="2">Horse</th>
-              <td>Mare</td>
+              <th scope="row">row header 3</th>
+              <td>Commodi dolore quod quae rerum!</td>
+              <td>Asperiores et mollitia porro. Atque.</td>
+              <td>Nesciunt blanditiis facere fugit qui!</td>
             </tr>
             <tr>
-              <td>Stallion</td>
+              <th scope="row">row header 4</th>
+              <td>Nesciunt explicabo sequi velit maiores!</td>
+              <td>Aperiam sapiente libero cupiditate veniam.</td>
+              <td>Velit pariatur atque est incidunt!</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Advanced</h3>
+
+      <div class="rounded rounded--warning">
+        <table>
+          <tr>
+            <th colspan="2">Animals</th>
+          </tr>
+          <tr>
+            <th colspan="2">Hippopotamus</th>
+          </tr>
+          <tr>
+            <th rowspan="2">Horse</th>
+            <td>Mare</td>
+          </tr>
+          <tr>
+            <td>Stallion</td>
+          </tr>
+          <tr>
+            <th colspan="2">Crocodile</th>
+          </tr>
+          <tr>
+            <th rowspan="2">Chicken</th>
+            <td>Hen</td>
+          </tr>
+          <tr>
+            <td>Rooster</td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>Advanced from reference</h3>
+
+      <div class="rounded rounded--danger">
+        <table>
+          <caption>
+            Caption
+          </caption>
+
+          <colgroup>
+            <col span="4" />
+            <col style="border: 2px solid var(--danger-color)" />
+          </colgroup>
+
+          <thead>
+            <tr>
+              <td colspan="2" rowspan="2"></td>
+              <th scope="colgroup" colspan="5">Rounds</th>
             </tr>
             <tr>
-              <th colspan="2">Crocodile</th>
+              <th scope="col">1. Round</th>
+              <th scope="col">2. Round</th>
+              <th scope="col">3. Round</th>
+              <th scope="col">4. Round</th>
+              <th scope="col">5. Round</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="rowgroup" rowspan="5">Phases</th>
+              <th scope="row">1. Phase</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
             </tr>
             <tr>
-              <th rowspan="2">Chicken</th>
-              <td>Hen</td>
+              <th scope="row">2. Phase</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
             </tr>
             <tr>
-              <td>Rooster</td>
+              <th scope="row">3. Phase</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
             </tr>
-          </table>
-        </div>
+            <tr>
+              <th scope="row">4. Phase</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+            <tr>
+              <th scope="row">5. Phase</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+          </tbody>
 
-        <h3>Advanced from reference</h3>
+          <tfoot>
+            Footer
+          </tfoot>
+        </table>
+      </div>
 
-        <div class="rounded rounded--danger">
-          <table>
-            <caption>
-              Caption
-            </caption>
+      <h3>Advanced from MDN</h3>
 
-            <colgroup>
-              <col span="4" />
-              <col style="border: 2px solid var(--danger-color)" />
-            </colgroup>
+      <div class="rounded rounded--success">
+        <table>
+          <caption>
+            Data about the planets of our solar system (Planetary facts taken
+            from
+            <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+          </caption>
 
-            <thead>
-              <tr>
-                <td colspan="2" rowspan="2"></td>
-                <th scope="colgroup" colspan="5">Rounds</th>
-              </tr>
-              <tr>
-                <th scope="col">1. Round</th>
-                <th scope="col">2. Round</th>
-                <th scope="col">3. Round</th>
-                <th scope="col">4. Round</th>
-                <th scope="col">5. Round</th>
-              </tr>
-            </thead>
+          <colgroup>
+            <col span="2" />
+            <col style="border: 2px solid var(--primary-color)" />
+            <col span="2" />
+            <col class="col col--border-success" />
+            <col class="col col--border-warning" span="2" />
+            <col class="col col--border-danger" span="4" />
+          </colgroup>
 
-            <tbody>
-              <tr>
-                <th scope="rowgroup" rowspan="5">Phases</th>
-                <th scope="row">1. Phase</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <th scope="row">2. Phase</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <th scope="row">3. Phase</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <th scope="row">4. Phase</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <th scope="row">5. Phase</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-            </tbody>
+          <thead>
+            <tr>
+              <td colspan="2" />
+              <th scope="col">Name</th>
+              <th scope="col">Mass</th>
+              <th scope="col">Diameter</th>
+              <th scope="col">Density</th>
+              <th scope="col">Gravity</th>
+              <th scope="col">Length of day</th>
+              <th scope="col">Distance from Sun</th>
+              <th scope="col">Mean temperature</th>
+              <th scope="col">Number of moons</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
 
-            <tfoot>
-              Footer
-            </tfoot>
-          </table>
-        </div>
+          <tbody>
+            <tr>
+              <th scope="rowgroup" colspan="2" rowspan="4">
+                Terrestrial planets
+              </th>
+              <th scope="row">Mercury</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+            <tr>
+              <th scope="row">Venus</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+            <tr>
+              <th scope="row">Earth</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+            <tr>
+              <th scope="row">Mars</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
 
-        <h3>Advanced from MDN</h3>
+            <tr>
+              <th scope="rowgroup" rowspan="4">Jovian planets</th>
+              <th scope="rowgroup" rowspan="2">Gas giants</th>
+              <th scope="row">Jupiter</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+            <tr>
+              <th scope="row">Saturn</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Ice giants</th>
+              <th scope="row">Uranus</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+            <tr>
+              <th scope="row">Neptune</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
 
-        <div class="rounded rounded--success">
-          <table>
-            <caption>
-              Data about the planets of our solar system (Planetary facts taken
-              from
-              <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
-                >Nasa's Planetary Fact Sheet - Metric</a
-              >).
-            </caption>
+            <tr>
+              <th scope="rowgroup" colspan="2">Dwarf planets</th>
+              <th scope="row">Pluto</th>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-            <colgroup>
-              <col span="2" />
-              <col style="border: 2px solid var(--primary-color)" />
-              <col span="2" />
-              <col class="col col--border-success" />
-              <col class="col col--border-warning" span="2" />
-              <col class="col col--border-danger" span="4" />
-            </colgroup>
+    <section id="my-section" data-count="5" data-elem="button" data-content="my content"
+      data-style='{ "color": "var(--bg-color)", "background": "var(--primary-color)", "padding": ".5rem 1rem", "border": "none", "border-radius": "var(--border-radius)", "display": "block", "margin-bottom": "var(--base-gutter)" }'>
+      <h2>Dataset</h2>
+    </section>
 
-            <thead>
-              <tr>
-                <td colspan="2" />
-                <th scope="col">Name</th>
-                <th scope="col">Mass</th>
-                <th scope="col">Diameter</th>
-                <th scope="col">Density</th>
-                <th scope="col">Gravity</th>
-                <th scope="col">Length of day</th>
-                <th scope="col">Distance from Sun</th>
-                <th scope="col">Mean temperature</th>
-                <th scope="col">Number of moons</th>
-                <th scope="col">Notes</th>
-              </tr>
-            </thead>
+    <section>
+      <h2>SVG</h2>
 
-            <tbody>
-              <tr>
-                <th scope="rowgroup" colspan="2" rowspan="4">
-                  Terrestrial planets
-                </th>
-                <th scope="row">Mercury</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <th scope="row">Venus</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <th scope="row">Earth</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <th scope="row">Mars</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
+      <svg id="my-svg" width="128" height="128">
+        <rect width="100%" height="100%" fill="white" />
+      </svg>
 
-              <tr>
-                <th scope="rowgroup" rowspan="4">Jovian planets</th>
-                <th scope="rowgroup" rowspan="2">Gas giants</th>
-                <th scope="row">Jupiter</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <th scope="row">Saturn</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <th scope="row" rowspan="2">Ice giants</th>
-                <th scope="row">Uranus</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <th scope="row">Neptune</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
+      <svg width="128" height="128">
+        <rect width="100%" height="100%" />
+        <circle cx="50%" cy="50%" r="16" fill="lightgreen" />
+        <circle cx="50%" cy="50%" r="16" fill="lightgreen" />
+        <circle cx="50%" cy="50%" r="12" fill="tomato" />
+        <circle cx="50%" cy="50%" r="8" fill="white" />
+        <circle cx="50%" cy="50%" r="4" fill="black" />
+      </svg>
+    </section>
+  </main>
 
-              <tr>
-                <th scope="rowgroup" colspan="2">Dwarf planets</th>
-                <th scope="row">Pluto</th>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+  <script src="/dataset.js" type="module"></script>
+  <script src="/svg.js" type="module"></script>
+</body>
 
-      <section
-        id="my-section"
-        data-count="5"
-        data-elem="button"
-        data-content="my content"
-        data-style='{ "color": "var(--bg-color)", "background": "var(--primary-color)", "padding": ".5rem 1rem", "border": "none", "border-radius": "var(--border-radius)", "display": "block", "margin-bottom": "var(--base-gutter)" }'
-      >
-        <h2>Dataset</h2>
-      </section>
-
-      <section>
-        <h2>SVG</h2>
-
-        <svg id="my-svg" width="128" height="128">
-          <rect width="100%" height="100%" fill="white" />
-        </svg>
-
-        <svg width="128" height="128">
-          <rect width="100%" height="100%" />
-          <circle cx="50%" cy="50%" r="16" fill="lightgreen" />
-          <circle cx="50%" cy="50%" r="16" fill="lightgreen" />
-          <circle cx="50%" cy="50%" r="12" fill="tomato" />
-          <circle cx="50%" cy="50%" r="8" fill="white" />
-          <circle cx="50%" cy="50%" r="4" fill="black" />
-        </svg>
-      </section>
-    </main>
-
-    <script src="/dataset.js"></script>
-    <script src="/svg.js"></script>
-  </body>
 </html>
