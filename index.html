@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="/table.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/table.css" />
+  <link rel="stylesheet" href="./styles/buttons.css" />
   <title>HTML</title>
 </head>
 
@@ -354,13 +355,25 @@
 
       <svg id="my-svg" width="128" height="128"></svg>
 
-      <input type="number" placeholder="line-thickness" />
+      <input type="number" />
       <button>draw</button>
+    </section>
+
+    <section>
+      <h2>Buttons</h2>
+
+      <div class="list-container list-container_col_5">
+        <button class="btn btn--danger" disabled>disabled button</button>
+        <button class="btn">just a button</button>
+        <button class="btn btn--primary">primary button</button>
+        <button class="btn btn--danger">danger button</button>
+        <button class="btn btn--warning">warning button</button>
+      </div>
     </section>
   </main>
 
-  <script src="/dataset.js" type="module"></script>
-  <script src="/svg.js" type="module"></script>
+  <script src="./scripts/dataset.js" type="module"></script>
+  <script src="./scripts/svg.js" type="module"></script>
 </body>
 
 </html>

@@ -14,7 +14,7 @@ body {
   --text-color: #cdd6f4;
   --bg-color: #1e1e2e;
   --base-gutter: 0.5rem;
-  --border-radius: calc(var(--base-gutter) / 2);
+  --border-radius: var(--base-gutter);
   --container-width: 80rem;
   --animation-duration: 0.2s;
 }
@@ -28,9 +28,8 @@ a {
   color: var(--link-color);
 }
 
-button,
 input {
-  padding: calc(var(--base-gutter) / 2) var(--base-gutter);
+  padding: var(--base-gutter) calc(var(--base-gutter) * 2);
   border-radius: var(--border-radius);
   border: 1px solid var(--primary-color);
 }
@@ -38,20 +37,6 @@ input {
 input {
   background: var(--bg-color);
   color: var(--text-color);
-}
-
-button {
-  background: var(--primary-color);
-  color: var(--bg-color);
-  cursor: pointer;
-  transition: transform var(--animation-duration);
-  box-shadow: 0 0.33rem 1rem -0.2rem var(--primary-color);
-}
-
-button:active {
-  color: var(--primary-color);
-  background: var(--bg-color);
-  transform: translateY(0.2rem);
 }
 
 body {
@@ -66,13 +51,13 @@ main {
 }
 
 section {
-  padding: var(--base-gutter);
+  padding: calc(var(--base-gutter) * 3);
   border: 2px solid var(--primary-color);
   border-radius: var(--border-radius);
 }
 
 hr {
-  margin: calc(var(--base-gutter) * 2) 0;
+  margin: calc(var(--base-gutter) * 3) 0;
 
   border: 1px solid var(--primary-color);
   border-radius: var(--border-radius);
@@ -92,22 +77,22 @@ h6 {
   /* border-bottom: 1px solid var(--primary-color); */
 }
 h1 {
-  margin-bottom: var(--base-gutter);
+  margin-bottom: var(--base-gutter) * 2;
 }
 h2 {
-  margin-bottom: calc(var(--base-gutter) * 0.75);
+  margin-bottom: var(--base-gutter);
 }
 h3 {
-  margin-bottom: calc(var(--base-gutter) * 0.66);
+  margin-bottom: calc(var(--base-gutter) * 0.9);
 }
 h4 {
-  margin-bottom: calc(var(--base-gutter) * 0.5);
+  margin-bottom: calc(var(--base-gutter) * 0.75);
 }
 h5 {
-  margin-bottom: calc(var(--base-gutter) * 0.33);
+  margin-bottom: calc(var(--base-gutter) * 0.66);
 }
 h6 {
-  margin-bottom: calc(var(--base-gutter) * 0.25);
+  margin-bottom: calc(var(--base-gutter) * 0.5);
 }
 
 .rounded {
@@ -143,7 +128,10 @@ h6 {
 }
 
 .list-container {
-  display: flex;
-  flex-direction: column;
-  gap: var(--base-gutter);
+  display: grid;
+  gap: calc(var(--base-gutter) * 2);
+}
+
+.list-container_col_5 {
+  grid-template-columns: repeat(5, auto);
 }

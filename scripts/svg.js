@@ -23,16 +23,21 @@ if (!input) {
   throw `no ${inputSelector} inside ${sectionSelector} found`;
 }
 
-button.addEventListener("click", () => draw());
+const DEFAULT_STEP_SIZE = 4;
+input.value = DEFAULT_STEP_SIZE;
+input.addEventListener("change", draw);
+button.addEventListener("click", draw);
 
 function draw() {
-  const STEP_SIZE = Number(input.value) || 4;
+  svg.childNodes.forEach((c) => c.remove());
+
+  const STEP_SIZE = Number(input.value) || 1;
   const COUNT = svg.clientWidth / STEP_SIZE;
 
   for (let i = 0; i < COUNT; i++) {
     const circle = document.createElementNS(
       "http://www.w3.org/2000/svg",
-      "circle"
+      "circle",
     );
 
     circle.setAttribute("cx", "50%");
