@@ -1,3 +1,6 @@
+import $ from "jquery";
+console.log($);
+
 const sectionSelector = "#my-svg-section";
 const section = document.querySelector(sectionSelector);
 

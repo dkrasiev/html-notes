@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+:root {
   --primary-color: #b4befe;
   --success-color: #a6e3a1;
   --warning-color: #f9e2af;
@@ -134,4 +134,11 @@ h6 {
 
 .list-container_col_5 {
   grid-template-columns: repeat(5, auto);
+}
+
+.focus {
+  /* border: 1px solid var(--warning-color); */
+  outline: 2px solid var(--warning-color);
+  outline-offset: 0.25rem;
+  border-radius: 0.25rem;
 }

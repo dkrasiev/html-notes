@@ -1,8 +1,12 @@
+import { None, Option, Some } from "ts-results-es";
+
 function main() {
   const selector = "#my-section";
   const section = document.querySelector(selector);
 
-  if (!section) {
+  console.log(Some(section));
+
+  if (section instanceof None) {
     console.error(`no ${selector} found`);
     return;
   }
@@ -30,7 +34,7 @@ function main() {
       try {
         const customStyles = JSON.parse(style);
         Object.entries(customStyles).forEach(([k, v]) =>
-          element.style.setProperty(k, v)
+          element.style.setProperty(k, v),
         );
       } catch (_e) {
         console.error(`failed to parse ${style}`);
