@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #b4befe;
+  --success-color: #a6e3a1;
+  --warning-color: #f9e2af;
+  --danger-color: #f38ba8;
+  --link-color: #89b4fa;
+  /* --secondary-color: #b4befe; */
+  --text-color: #cdd6f4;
+  --bg-color: #1e1e2e;
+  --base-gutter: 0.5rem;
+  --border-radius: var(--base-gutter);
+  --container-width: 80rem;
+  --animation-duration: 0.2s;
+}
+
+*::selection {
+  color: var(--bg-color);
+  background: var(--primary-color);
+}

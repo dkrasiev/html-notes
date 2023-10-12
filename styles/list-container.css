@@ -1,0 +1,8 @@
+.list-container {
+  display: grid;
+  gap: calc(var(--base-gutter) * 2);
+}
+
+.list-container_col_5 {
+  grid-template-columns: repeat(5, auto);
+}

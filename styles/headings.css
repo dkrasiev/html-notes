@@ -1,0 +1,27 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+  /* border-bottom: 1px solid var(--primary-color); */
+}
+h1 {
+  margin-bottom: var(--base-gutter) * 2;
+}
+h2 {
+  margin-bottom: var(--base-gutter);
+}
+h3 {
+  margin-bottom: calc(var(--base-gutter) * 0.9);
+}
+h4 {
+  margin-bottom: calc(var(--base-gutter) * 0.75);
+}
+h5 {
+  margin-bottom: calc(var(--base-gutter) * 0.66);
+}
+h6 {
+  margin-bottom: calc(var(--base-gutter) * 0.5);
+}

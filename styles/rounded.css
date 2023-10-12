@@ -1,0 +1,31 @@
+.rounded {
+  --rounded-border-color: var(--primary-color);
+  --rounded-border-width: 2px;
+  --rounded-padding: 0px;
+
+  padding: var(--rounded-padding);
+  border: var(--rounded-border-width) solid var(--rounded-border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  /* padding: calc(var(--base-gutter) / 4); */
+}
+
+.rounded--success {
+  --rounded-border-color: var(--success-color);
+}
+.rounded--warning {
+  --rounded-border-color: var(--warning-color);
+}
+.rounded--danger {
+  --rounded-border-color: var(--danger-color);
+}
+
+.rounded--small {
+  --rounded-border-width: 1px;
+}
+.rounded--large {
+  --rounded-border-width: 3px;
+}
+.rounded--space {
+  --rounded-padding: calc(var(--base-gutter) / 2);
+}

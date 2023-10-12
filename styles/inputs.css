@@ -1,0 +1,10 @@
+input {
+  padding: var(--base-gutter) calc(var(--base-gutter) * 2);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-color);
+}
+
+input {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
