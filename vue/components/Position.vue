@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-  <Section :title="'Test'">
+  <Section :title="'Position'">
     <div class="container">
       <div>
         static container

@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-  <Section :title="'Test'">
+  <Section :title="'Content'">
     <div class="container">
       <h3>auto</h3>
       <div class="tag">Lorem ipsum dolor sit amet.</div>
